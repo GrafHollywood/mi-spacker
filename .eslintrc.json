@@ -15,10 +15,17 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["react", "@typescript-eslint", "prettier"],
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"prettier",
+		"simple-import-sort"
+	],
 	"rules": {
 		"no-console": "error",
-		"prettier/prettier": ["error"]
+		"prettier/prettier": ["error"],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error"
 	},
 	"settings": {
 		"react": {
