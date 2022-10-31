@@ -22,7 +22,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"lint:prettier": "prettier --check .",
-		"lint:eslint": "eslint **/*.ts"
+		"lint:eslint": "eslint . --ext .tsx --ext .ts"
 	},
 	"eslintConfig": {
 		"extends": [

@@ -9,5 +9,5 @@
 	"bracketSpacing": false,
 	"bracketSameLine": true,
 	"arrowParens": "avoid",
-	"endOfLine": "lf"
+	"endOfLine": "crlf"
 }
