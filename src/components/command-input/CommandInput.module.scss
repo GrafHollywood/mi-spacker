@@ -1,0 +1,32 @@
+.welcome-line {
+	font-weight: bold;
+	color: #61d6d6;
+}
+
+.command-line {
+	color: white;
+
+	&::after {
+		content: '_';
+
+		background-color: white;
+
+		animation-name: cursor;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+	}
+}
+
+@keyframes cursor {
+	0% {
+		content: '_';
+	}
+
+	50% {
+		content: '';
+	}
+
+	100% {
+		content: '_';
+	}
+}
