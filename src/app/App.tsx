@@ -1,15 +1,12 @@
-import {Button, useColorMode} from '@chakra-ui/react';
+import {Container} from '@chakra-ui/react';
 import React from 'react';
 
-import styles from './App.module.scss';
+import {Toolbar} from '../components/toolbar/Toolbar';
 
 export function App() {
-	const {colorMode, toggleColorMode} = useColorMode();
 	return (
-		<div className={styles['app']}>
-			<Button onClick={toggleColorMode}>
-				Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-			</Button>
-		</div>
+		<Container maxW="900px">
+			<Toolbar />
+		</Container>
 	);
 }
